@@ -1,0 +1,27 @@
+package bill;
+
+import java.util.Scanner;
+
+public class bill_gen {
+	public static void main(String[] args)
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the Number Of pizzas bought:");
+		int p=sc.nextInt();
+		System.out.println("Enter the Number Of puffs:");
+		int pu=sc.nextInt();
+		System.out.println("Enter the Number Of cold drinks:");
+		int c=sc.nextInt();
+		System.out.println("Bill Details");
+		System.out.println("Number of pizza"+ p);
+		System.out.println("Number of puffs"+pu);
+		System.out.println("Number of cold drinks"+c);
+		int pizza=100*p;
+		int puffs=20*pu;
+		int cold=10*c;
+		int sum=pizza+puffs+cold;
+		System.out.println("total prize ="+sum);
+		
+
+	}
+}
